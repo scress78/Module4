@@ -10,9 +10,9 @@ def calculate_price(price, cash_coupon, percent_coupon):
     shipping = 0
     tax = 1.06
     priceoff = price - cash_coupon
-    print(priceoff)
+    #print(priceoff)
     discount = priceoff * (1-percent_coupon)
-    print(discount)
+    #print(discount)
     if price <= 10:
         shipping = 5.95
     elif 10 < price <= 30:
@@ -21,11 +21,11 @@ def calculate_price(price, cash_coupon, percent_coupon):
         shipping = 11.95
     elif price > 50:
         shipping = 0
-    print(shipping)
+    #print(shipping)
     post_shipping = discount + shipping
-    print(post_shipping)
+    #print(post_shipping)
     final_price = post_shipping * tax
-    print(final_price)
+    #print(final_price)
     return final_price
 
 if __name__ == '__main__':
